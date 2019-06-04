@@ -9,6 +9,7 @@
 
 <?php 
 $kid = new Kid();
+$kid->set(boy);
 
 
 class Kid{
@@ -22,9 +23,9 @@ class Kid{
         $this->sex = 'boy';
 
     }
-    function name(){
-      if (condition) {
-        # code...
+    function showName($sex){
+      if ($sex = boy) {
+        $this->name = 'くん';
       }
 
     }
